@@ -10,6 +10,7 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -25,14 +26,14 @@
                 <div class="col-md">Raleigh</div>
                 <div class="col-md">Warwick</div>
                 </div>
-    <h1>
-      Nashville, USA
+    <h1 id = "city">
+      Nashville
     </h1>
     <ul>
       <li>
-        Wednesday, 23:10:56
+        <span class= "datetime">Wednesday, 23:10:56</span>
       </li>
-      <li>
+      <li id= "description">
         Partly Cloudly
       </li>
     </ul>
@@ -42,7 +43,7 @@
         <div class="clearfix weather-temperature">
 <img src= "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Partly Cloudy"class="float-left"
 />
-<strong>94</strong><span class="units">&#176F | <a href="#">&#176C</a></span>
+<strong id= "temperature">95</strong><span class="units">&#176F | <a href="#">&#176C</a></span>
 </div>
 </div>
 <div class="col-6">
@@ -51,10 +52,10 @@
     Precipitation: 0%
   </li>
   <li>
-    Humidity: 72%
+    Humidity: <span id="humidity"></span>%
   </li>
   <li>
-    Wind: 4 m/ph
+    Wind: <span id="wind"></span> m/ph
   </li>
 </ul>
 </div>
