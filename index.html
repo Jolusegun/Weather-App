@@ -15,13 +15,16 @@
   </head>
   <body>
   <div class="container">
+    <div class="weather-app-wrapper">
     <div class="weather-app">
+      <div class="overview">
        <div class="row">
                 <div class="col-md">Denver</div>
                 <div class="col-md">Houston</div>
                 <div class="col-md">Tallahassee</div>  
                 <div class="col-md">Raleigh</div>
                 <div class="col-md">Warwick</div>
+                </div>
     <h1>
       Nashville, USA
     </h1>
@@ -30,13 +33,17 @@
         Wednesday, 23:10:56
       </li>
       <li>
-        Clear
+        Partly Cloudly
       </li>
     </ul>
+    </div>
     <div class= "row">
       <div class="col-6">
-<img src= "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="partly cloudy"/>
-94&#176F | &#176C
+        <div class="clearfix weather-temperature">
+<img src= "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Partly Cloudy"class="float-left"
+/>
+<strong>94</strong><span class="units">&#176F | <a href="#">&#176C</a></span>
+</div>
 </div>
 <div class="col-6">
 <ul>
@@ -52,10 +59,12 @@
 </ul>
 </div>
       </div>
+      </div>
       <small>
         <a href="https://github.com/Jolusegun/Vanilla-Weather-App" target="_blank">Open-source code</a> by Joyce O. Olusegun
-      </small>
-      </div> 
+      </small> 
+      </div>
+  </div>
     </div>
     <script src="src/app.js"></script>
   </body>
