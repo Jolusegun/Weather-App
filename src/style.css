@@ -32,6 +32,10 @@ li {
   color: #997878;
 }
 
+.col-md {
+  color: #997878;
+}
+
 .col-md:hover {
   text-decoration: underline;
   cursor: pointer;
