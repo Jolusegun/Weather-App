@@ -124,6 +124,10 @@ function currentDate(datetime) {
   return `<strong>${currentDay}</strong>,${currentMonth} ${currentDate},${currentYear} ${currentHour}:${currentMinute}:${currentSecond}`;
 }
 
+let dateElement = document.querySelector(".datetime");
+let currentTime = new Date();
+dateElement.innerHTML = currentDate(currentTime);
+
 function displayTemperature(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
@@ -145,11 +149,19 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-let apiKey = "13180cac35345d5f25e6b2fd362d032f";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Nashville&appid=${apiKey}&units=imperial`;
+function search(city) {
+  let apiKey = "13180cac35345d5f25e6b2fd362d032f";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayTemperature);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
 
-let dateElement = document.querySelector(".datetime");
-let currentTime = new Date();
-dateElement.innerHTML = currentDate(currentTime);
+search("Nashville");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
