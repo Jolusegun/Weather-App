@@ -1,10 +1,13 @@
 body {
   font-family: monospace;
-  background: rgb(119, 127, 148) 105.8%;
-  
+  background: silver;
 }
 .weather-app {
-  background:linear-gradient(177.9deg, rgb(58, 62, 88) 3.6%, rgb(119, 127, 148) 105.8%);
+  background: linear-gradient(
+    177.9deg,
+    rgb(58, 62, 88) 3.6%,
+    rgb(119, 127, 148) 105.8%
+  );
 }
 
 h1 {
@@ -38,12 +41,17 @@ li {
 }
 
 .col-md {
-  color: #997878;
+  color: whitesmoke;
+  text-decoration: underline;
 }
 
 .col-md:hover {
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
+  color: #997878;
+}
+
+.source {
   color: #997878;
 }
 
