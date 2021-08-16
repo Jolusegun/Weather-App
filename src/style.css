@@ -10,7 +10,7 @@ body {
   font-size: 35px;
   margin-top: -20px;
   font-family: "Cabin Sketch", cursive;
-  color: black;
+  color: #cccccc;
 }
 .weather-app {
   background: linear-gradient(
@@ -100,10 +100,15 @@ li {
 }
 .explore {
   text-align: center;
+  margin-top: -25px;
+}
+
+#city-row {
+  margin-top: -15px;
 }
 
 .below {
-  color: #5C636A;
+  color: darkgrey;
 }
 
 .overview {
