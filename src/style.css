@@ -1,10 +1,7 @@
 body {
   font-family: monospace;
-  background: linear-gradient(
-    109.6deg,
-    rgb(245, 239, 249) 30.1%,
-    rgb(207, 211, 236) 100.2%
-  );
+  background: #cccccc;
+  background-image: url("universe.gif");
 }
 .weather-app {
   background: linear-gradient(
@@ -62,7 +59,7 @@ li {
 }
 
 .source {
-  color: silver;
+  color: darkgrey;
 }
 
 .source-site {
