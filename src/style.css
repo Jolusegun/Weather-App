@@ -3,6 +3,15 @@ body {
   background: #cccccc;
   background-image: url("universe.gif");
 }
+
+.weather-head {
+  text-align: center;
+  display: block;
+  font-size: 35px;
+  margin-top: -20px;
+  font-family: "Cabin Sketch", cursive;
+  color: black;
+}
 .weather-app {
   background: linear-gradient(
     177.9deg,
