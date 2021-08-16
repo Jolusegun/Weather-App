@@ -185,7 +185,7 @@ function currentDate(datetime) {
   let currentMinute = minutes[datetime.getMinutes()];
   let currentSecond = seconds[datetime.getSeconds()];
 
-  return `<strong>${currentDay}</strong>,${currentMonth} ${currentDate}, ${currentYear} ${currentHour}:${currentMinute}:${currentSecond}`;
+  return `${currentDay}, ${currentMonth} ${currentDate}, ${currentYear} ${currentHour}:${currentMinute}:${currentSecond}`;
 }
 
 let dateElement = document.querySelector(".datetime");
