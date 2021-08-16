@@ -14,7 +14,19 @@ body {
 #city {
   font-family: "Cabin Sketch", cursive;
   font-size: 35px;
-  color: black;
+  margin-top: 20px;
+  color: #cccccc;
+}
+
+#description {
+  font-family: "Cabin Sketch", cursive;
+  font-size: 25px;
+  color: #cccccc;
+  margin-top: 5px;
+}
+
+#update-time {
+  margin-top: 9px;
 }
 
 h1 {
