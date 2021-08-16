@@ -44,12 +44,12 @@ li {
   color: #997878;
 }
 
-.col-md {
+.link-source {
   color: whitesmoke;
   text-decoration: underline;
 }
 
-.col-md:hover {
+.link-source:hover {
   text-decoration: none;
   cursor: pointer;
   color: #997878;
@@ -57,6 +57,11 @@ li {
 
 .source {
   color: silver;
+}
+
+.source-site {
+  text-align: center;
+  display: block;
 }
 
 .weather-app-wrapper {
@@ -68,6 +73,9 @@ li {
   padding: 25px;
   border: 1px solid #dadde1;
   border-radius: 15px;
+}
+.explore {
+  text-align: center;
 }
 
 .overview {
