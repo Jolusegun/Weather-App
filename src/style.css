@@ -4,6 +4,10 @@ body {
   background-image: url("universe.gif");
 }
 
+.btn btn-secondary btn-md {
+  transition: all 100ms ease-in-out;
+}
+
 .weather-head {
   text-align: center;
   display: block;
@@ -77,6 +81,7 @@ li {
   text-decoration: none;
   cursor: pointer;
   color: #997878;
+  transition: all 100ms ease-in-out;
 }
 
 .source {
