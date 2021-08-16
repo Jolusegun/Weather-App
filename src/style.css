@@ -14,6 +14,12 @@ body {
   );
 }
 
+#city {
+  font-family: "Cabin Sketch", cursive;
+  font-size: 35px;
+  color: black;
+}
+
 h1 {
   color: #878787;
   display: block;
