@@ -102,6 +102,10 @@ li {
   text-align: center;
 }
 
+.below {
+  color: lightgrey;
+}
+
 .overview {
   margin-bottom: 20px;
 }
